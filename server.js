@@ -9,5 +9,5 @@ app.listen(8080, ()=>{
 
 // main page 접속하기
 app.get('/', (request, response)=>{
-    response.send("지수의 포트폴리오에 오신 여러분, 환영합니다.")
+    response.sendFile(__dirname + '/index.html')
 })
