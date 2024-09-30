@@ -15,7 +15,7 @@
         <nav>
             <menu>
                 <li> HOME </li>
-                <li> ABOUT ME </li>
+                <li> <a href="/views/about.html">ABOUT ME </a></li>
                 <li> SKILLS </li>
                 <li> MY WORK </li>
             </menu>
@@ -29,21 +29,9 @@
             <p> 끊임없이 성장하는 풀스택 개발자 신지수입니다. </p>
             <p> Full-Stack Developer </p>
         </div>
-        <input type="button" value="자세히 알아보기" id="info">
+        <input type="button" value="자세히 알아보기" id="info" onclick="location.href='/views/about.html'">
     </main>
 
-    <!-- menu popup -->
-    <div id="background" class="popup"></div>
-    <div id="pop_menu" class="popup">
-        <h4> JISOO's PORTFOLIO </h4>
-        <div class="menupop">
-            <p><a href="#"> ABOUT ME </a></p>
-            <p><a href="#"> SKILLS </a></p>
-            <p><a href="#"> MY WORK </a></p>
-            <p><a href="#"> CONTACT ME </a></p>
-        </div>
-        <button id="exit" class="exit"> 돌아가기 </button>
-    </div>
 
     <!-- footer -->
     <footer>
