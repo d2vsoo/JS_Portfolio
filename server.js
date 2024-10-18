@@ -15,7 +15,7 @@ app.listen(8080, ()=>{
 
 // main page 접속하기
 app.get('/', (request, response)=>{
-    response.sendFile(__dirname + '/views/index.html')
+    response.sendFile(__dirname + '/index.html')
 })
 
 app.get('/aboutMe', (request, response)=> {
