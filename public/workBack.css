@@ -1,0 +1,296 @@
+body {
+    animation: fadeIn 2s ease;
+}
+
+@keyframes fadeIn {
+    0%, 15% {
+        transform: scale(0);
+        opacity: 0;
+    } 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+main {
+    position: relative;
+    overflow: hidden;
+}
+
+.ai_button {
+    width: 400px;
+    height: 600px;
+    margin-top: 30px;
+    margin-left: 60px;
+    background-color: rgb(84, 92, 136);
+    border: 1px solid white;
+    color: white;
+}
+
+.ai_button p {
+    text-align: left;
+    font-size: 23px;
+    font-style: italic;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.ai_button p:first-child {
+    font-size: 30px;
+}
+
+.ai_button:hover {
+    cursor: url('/img/night_수정.png'), auto;
+    animation: move 1.5s ease-in-out forwards;
+    transform: scale(1.2);
+    transition: all 2s;
+    background-color: white;
+    color: rgb(84, 92, 136);
+}
+
+@keyframes move {
+    0% {
+        border-radius: 0%;
+    }
+
+    50% {
+        border-radius: 50%;
+    }
+
+    100% {
+        border-radius: 100%;
+    }
+}
+
+.container {
+    width: 200vw;
+    height: 100%;
+    transform: translateX(0vw);
+    transition: 0.3s ease;
+}
+
+.slide-box {
+    width: 100vw;
+    height: 100%;
+    float: left;
+}
+
+.web_button {
+    width: 1600px;
+    height: 95px;
+    margin-top: 30px;
+    margin-left: 150px;
+    background-color: white;
+    border: 1px solid rgb(84, 92, 136);
+    color: rgb(84, 92, 136);
+}
+
+.web_button:first-child {
+    margin-top: 85px;
+}
+
+.web_button p {
+    text-align: left;
+    font-size: 20px;
+    font-style: italic;
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+
+.web_button p:first-child {
+    margin-top: 8px;
+    font-size: 26px;
+}
+
+.web_button:hover {
+    cursor: url('/public/img/night_수정.png'), auto;
+    transform: scale(1.1);
+    transition: all 2s;
+    background-color: white;
+    color: rgb(84, 92, 136);
+}
+
+/* 슬라이드 버튼 */
+.btn-box {
+    width: 450px;
+    height: 65px;
+    margin: 10px 10px 0 60px;
+}
+
+.btn-box span {
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.before, .after {
+    width: 50px;
+    height: 65px;
+    background-color: rgb(84, 92, 136);
+    color: white;
+    font-size: 23px;
+    border: none;
+}
+
+.before:hover, .after:hover {
+    box-shadow: 0 3px 5px 0px #acacac;
+}
+
+.before:active, .after:active {
+    box-shadow: 3px 3px 5px 0 #969696;
+}
+
+.btn-box02 {
+    width: 120px;
+    height: 65px;
+    margin: 10px 0 0 60px;
+}
+
+.prev, .next {
+    width: 50px;
+    height: 65px;
+    background-color: rgb(84, 92, 136);
+    color: white;
+    font-size: 23px;
+    border: none;
+}
+
+.prev:hover, .next:hover {
+    box-shadow: 3px 3px 5px 3px #acacac;
+}
+
+.prev:active, .next:active {
+    box-shadow: 3px 3px 5px 0 #969696;
+}
+
+/* 모달창 */
+
+.modalWrap {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    animation: updown 1s;
+    z-index: 100;
+}
+
+@keyframes updown {
+    0% {
+        opacity: 0;
+        /* x, y, z 3차원의 값 조정 */
+        transform: translate3d(0, -100%, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
+.modal h3 {
+    margin: 60px 80px;
+    font-size: 28px;
+    color: rgb(84, 92, 136);
+    font-family: 'Giants-Inline';
+}
+
+.modal {
+    position: absolute;
+    top: 20px;
+    left: 360px;
+    width: 1200px;
+    height: 750px;
+    overflow : scroll;
+    background-color: rgb(240, 241, 245);
+}
+
+.fa-icons {
+    font-size: 28px;
+    transition: all 1s;
+}
+
+.modal img {
+    margin-left: 80px;
+    width: 1000px;
+}
+
+.content {
+    width: 100%;
+    height: 700px;
+    position: relative;
+}
+
+.proposal {
+    color: #3e3e3e;
+    font-size: 23px;
+    position: absolute;
+    bottom: 30px;
+    left: 350px;
+}
+
+.code-link {
+    color: #3e3e3e;
+    font-size: 23px;
+    position: absolute;
+    bottom: 30px;
+    left: 650px;
+}
+
+
+.proposal:hover, .code-link:hover {
+    color: rgb(241, 138, 138);
+    transform: scale(1.1);
+}
+
+
+.modal-web p {
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #3e3e3e;
+}
+
+.modalWrap-web {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 1900px;
+    display: none;
+    animation: updown 1s;
+    z-index: 100;
+}
+
+.modal-web h3 {
+    margin: 60px 80px;
+    font-size: 28px;
+    color: rgb(84, 92, 136);
+    font-family: 'Giants-Inline';
+}
+
+.modal-web {
+    position: absolute;
+    top: 20px;
+    left: 360px;
+    width: 1200px;
+    height: 750px;
+    overflow : scroll;
+    background-color: rgb(240, 241, 245);
+}
+
+.modal-web img {
+    margin-left: 80px;
+    width: 1000px;
+}
+
+.code {
+    text-align: center;
+    font-size: 23px;
+    margin: 45px 0 30px 0;
+    color: #3e3e3e;
+}
+
+.code:hover {
+    color: rgb(241, 138, 138);
+    transform: scale(1.1);
+}
