@@ -16,7 +16,7 @@ app.listen(8080, ()=>{
 // main page 접속하기
 app.get('/', (request, response)=>{
     response.sendFile(__dirname + '/views/index.html')
-    app.use(express.static(__dirname + 'public/main.css'))
+    app.use(express.static(__dirname + '/public/main.css'))
 })
 
 app.get('/aboutMe', (request, response)=> {
