@@ -1,0 +1,150 @@
+body {
+    animation: fadeIn 2s ease;
+}
+
+@keyframes fadeIn {
+    0%, 15% {
+        transform: translateY(-100%);
+        opacity: 0;
+    } 100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+#skillBox {
+    width: 95%;
+    height: 95%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px 40px;
+    margin: 15px 0 0 45px;
+
+}
+
+.skill {
+    width: 550px;
+    height: 350px;
+    margin-left: 10px;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.lineBar {
+    font-size: 16px;
+    font-style: normal;
+    margin: 20px 10px;
+}
+
+.barLine {
+    width: 510px;
+    height: 15px;
+    background-color: white;
+    border-radius: 15px;
+    margin: 10px 0;
+}
+
+.bar {
+    width: 10px;
+    height: 100%;
+    border-radius: 15px;
+    background: linear-gradient(30deg, white, #a8a8a8);
+    transition: width 0.8s;
+}
+
+#skillBox:hover .barLine>.bar01 {
+    width: 70%;
+}
+
+#skillBox:hover .barLine>.bar02 {
+    width: 75%;
+}
+
+#skillBox:hover .barLine>.bar03 {
+    width: 60%;
+}
+
+#skillBox:hover .barLine>.bar04 {
+    width: 40%;
+}
+
+#skillBox:hover .barLine>.bar05 {
+    width: 80%;
+}
+
+#skillBox:hover .barLine>.bar06 {
+    width: 80%;
+}
+
+#skillBox:hover .barLine>.bar07 {
+    width: 70%;
+}
+
+#skillBox:hover .barLine>.bar08 {
+    width: 70%;
+}
+
+#skillBox:hover .barLine>.bar09 {
+    width: 75%;
+}
+
+#skillBox:hover .barLine>.bar10 {
+    width: 60%;
+}
+
+#skillBox:hover .barLine>.bar11 {
+    width: 65%;
+}
+
+#skillBox:hover .barLine>.bar12 {
+    width: 85%;
+}
+
+#skillBox:hover .barLine>.bar13 {
+    width: 95%;
+}
+
+#skillBox:hover .barLine>.bar14 {
+    width: 55%;
+}
+
+#skillBox:hover .barLine>.bar15 {
+    width: 75%;
+}
+
+#skillBox:hover .barLine>.bar16 {
+    width: 75%;
+}
+
+#skillBox:hover .barLine>.bar17 {
+    width: 70%;
+}
+
+#skillBox:hover .barLine>.bar18 {
+    width: 70%;
+}
+
+#skillBox:hover .barLine>.bar19 {
+    width: 70%;
+}
+
+#skillBox:hover .barLine>.bar20 {
+    width: 20%;
+}
+
+.server_text {
+    width: 210px;
+    margin-top: 40px;
+    line-height: 30px;
+    float: left;
+}
+
+.col_text {
+    width: 210px;
+    margin-top: 40px;
+    line-height: 30px;
+    float: right;
+    margin-right: 80px;
+}

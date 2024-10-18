@@ -1,0 +1,20 @@
+{
+  "name": "js_portfolio_fin",
+  "version": "1.0.0",
+  "main": "server.js",
+  "homepage" : "https://d2vsoo.github.io/JS_Portfolio/",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.1",
+    "gh-pages": "^6.2.0"
+  }
+}
